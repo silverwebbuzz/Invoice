@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons>
+      <ion-button color="primary" (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary" class="head">Add customer</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="checkmark" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-button fill="outline" shape="round" expand="full">Import from contacts</ion-button>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Customer</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Email</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">First name</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Last name</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Phone</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Fax</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Mobile</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Toll-free</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="item-btn" (click)="address()">
+    <ion-icon name="pin" color="primary"></ion-icon>
+    <ion-label color="primary">Address</ion-label>
+  </ion-item>
+  <ion-item lines="none" class="item-btn" (click)="shipping()">
+    <ion-icon name="bicycle" color="primary"></ion-icon>
+    <ion-label color="primary">Shipping details</ion-label>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Accounting number</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Website</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+</ion-content>

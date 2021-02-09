@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title color="primary" class="head">Items</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="search" mode="md"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="help-circle-outline" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content padding>
+
+  <div class="div-sec">
+
+    <!-- <div class="div-empty">
+      <ion-label class="img-empty">ITEMS</ion-label>
+      <ion-label class="lbl-head">You haven't created any items</ion-label>
+      <ion-label class="lbl-desc">Create an item to add to your invoice</ion-label>
+    </div> -->
+
+    <ion-card class="card-main">
+      <ion-row class="row-item bottom">
+        <ion-col size="8" class="col-left add-head">Ball</ion-col>
+        <ion-col size="4" class="col-right add-head">50.00</ion-col>
+      </ion-row>
+      <ion-row class="row-item add-bottom">
+        <ion-col size="8" class="col-left add-desc">For playing cricket</ion-col>
+        <ion-col size="4" class="col-right add-desc">+ GST 10%</ion-col>
+      </ion-row>
+    </ion-card>
+    
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/add-item">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

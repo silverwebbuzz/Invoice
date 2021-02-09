@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons>
+      <ion-button color="primary" (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary" class="head">Enter business info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/tabs/home">
+        <ion-icon name="checkmark" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="stacked" class="input-lbl">Business name</ion-label>
+    <ion-input type="text" placeholder="Enter business name" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="stacked" class="input-lbl">What type of business are you?</ion-label>
+    <ion-input readonly type="text" class="input-box boxes" placeholder="Select business type"></ion-input>
+    <ion-button fill="clear" size="small" (click)="modal()" class="icon-eye">
+      <ion-icon name="arrow-dropdown" mode="md" size="small"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="stacked" class="input-lbl">Business country</ion-label>
+    <ion-input readonly type="text" class="input-box boxes" placeholder="Select business country"></ion-input>
+    <ion-button fill="clear" size="small" (click)="modal()" class="icon-eye">
+      <ion-icon name="arrow-dropdown" mode="md" size="small"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="stacked" class="input-lbl">Business currency</ion-label>
+    <ion-input readonly type="text" class="input-box boxes" placeholder="Select business currency"></ion-input>
+    <ion-button fill="clear" size="small" (click)="modal()" class="icon-eye">
+      <ion-icon name="arrow-dropdown" mode="md" size="small"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="stacked" class="input-lbl">Personal currency</ion-label>
+    <ion-input readonly type="text" class="input-box boxes" placeholder="Select personal currency"></ion-input>
+    <ion-button fill="clear" size="small" (click)="modal()" class="icon-eye">
+      <ion-icon name="arrow-dropdown" mode="md" size="small"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+</ion-content>

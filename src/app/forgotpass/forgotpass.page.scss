@@ -1,0 +1,30 @@
+.lbl-logo{
+    height: 30%;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+.heading{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 25px 16px;
+    display: block;
+}
+.input-item{
+    --padding-start: 8px;
+
+    .input-lbl{
+        font-weight: bold;
+    }
+    .input-box{
+        background: #f1f1f1;
+        --padding-start: 8px;
+    }
+}
+.btn-forgot{
+    width: 75%;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 50px;
+}

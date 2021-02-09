@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title color="primary" class="head">Customers</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="search" mode="md"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="help-circle-outline" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content padding>
+
+  <div class="div-sec">
+
+    <!-- <div class="div-empty">
+      <ion-label class="img-empty">CUSTOMERS</ion-label>
+      <ion-label class="lbl-head">You haven't added any customers</ion-label>
+      <ion-label class="lbl-desc">Add a Customer by tapping on the '+' button.</ion-label>
+    </div> -->
+
+    <ion-card class="card-main">
+      <ion-row class="row-item">
+        <ion-col size="2" class="col-item">
+          <div class="div-img">
+            T
+          </div>
+        </ion-col>
+        <ion-col size="10" class="col-item add-spc">
+          <ion-label class="lbl-right">
+            <ion-text class="lbl-head">Name</ion-text>
+            <ion-text class="lbl-desc">Nick Name</ion-text>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/add-customer">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

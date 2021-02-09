@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons>
+      <ion-button color="primary" (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary" class="head">Add item</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="checkmark" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item lines="none" class="input-item">
+    <ion-label position="floating" class="input-lbl">Name</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item add">
+    <ion-label position="floating" class="input-lbl">Description</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="input-item add">
+    <ion-label position="floating" class="input-lbl">Price</ion-label>
+    <ion-input type="text" color="primary" class="input-box boxes" value="0"></ion-input>
+  </ion-item>
+
+</ion-content>

@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title color="primary" class="head">Invoices</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="search" mode="md"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="help-circle-outline" mode="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar> -->
+  <ion-toolbar color="light" class="tool-segment">
+    <ion-segment color="primary" mode="md" class="btns-segment" [(ngModel)]="invoicesegment">
+      <ion-segment-button value="unpaid" mode="md" class="btn-segment">
+        <ion-label color="primary" class="lbl-segment">UNPAID</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="draft" mode="md" class="btn-segment">
+        <ion-label color="primary" class="lbl-segment">DRAFT</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="all" mode="md" class="btn-segment">
+        <ion-label color="primary" class="lbl-segment">ALL</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div [ngSwitch]="invoicesegment" class="div-sec">
+
+    <div *ngSwitchCase="'unpaid'">
+
+      <!-- <div class="div-empty">
+        <ion-label class="img-empty">UNPAID</ion-label>
+        <ion-label class="lbl-head">You have no unpaid invoices</ion-label>
+        <ion-label class="lbl-desc">Sent, viewed, partially paid or overdue invoices will apppear here.</ion-label>
+      </div> -->
+
+      <ion-card class="card-main">
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-head">Name</ion-col>
+          <ion-col size="6" class="col-head add-right">$55.00</ion-col>
+        </ion-row>
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-desc">Invoice 1</ion-col>
+          <ion-col size="6" class="col-desc add-right">Due in 7 days</ion-col>
+        </ion-row>
+        <ion-row class="row-item add-top">
+          <ion-col size="6" class="col-item">
+            <ion-badge mode="md" class="badge1">Viewed</ion-badge>
+          </ion-col>
+          <ion-col size="6" class="col-item add-right">
+            <ion-button fill="clear" size="small" class="btn-edit">
+              <ion-icon name="create" mode="md"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </div>
+
+    <div *ngSwitchCase="'draft'">
+
+      <!-- <div class="div-empty">
+        <ion-label class="img-empty">DRAFT</ion-label>
+        <ion-label class="lbl-head">You have no draft invoices</ion-label>
+        <ion-label class="lbl-desc">Create a new invoice by tapping on the '+' button.</ion-label>
+      </div> -->
+
+      <ion-card class="card-main">
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-head">Name</ion-col>
+          <ion-col size="6" class="col-head add-right">$55.00</ion-col>
+        </ion-row>
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-desc">Invoice 2</ion-col>
+          <ion-col size="6" class="col-desc add-right">December 19, 2019</ion-col>
+        </ion-row>
+        <ion-row class="row-item add-top">
+          <ion-col size="6" class="col-item">
+            <ion-badge mode="md" class="badge2">Draft</ion-badge>
+          </ion-col>
+          <ion-col size="6" class="col-item add-right">
+            <ion-button fill="clear" size="small" class="btn-edit">
+              <ion-icon name="create" mode="md"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </div>
+
+    <div *ngSwitchCase="'all'">
+
+      <!-- <div class="div-empty">
+        <ion-label class="img-empty">ALL</ion-label>
+        <ion-label class="lbl-head">You haven't created any invoices</ion-label>
+        <ion-label class="lbl-desc">Create your first invoice and get paid for your excellent work.</ion-label>
+      </div> -->
+
+      <ion-card class="card-main">
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-head">Name</ion-col>
+          <ion-col size="6" class="col-head add-right">$55.00</ion-col>
+        </ion-row>
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-desc">Invoice 2</ion-col>
+          <ion-col size="6" class="col-desc add-right">December 19, 2019</ion-col>
+        </ion-row>
+        <ion-row class="row-item add-top">
+          <ion-col size="6" class="col-item">
+            <ion-badge mode="md" class="badge2">Draft</ion-badge>
+          </ion-col>
+          <ion-col size="6" class="col-item add-right">
+            <ion-button fill="clear" size="small" class="btn-edit">
+              <ion-icon name="create" mode="md"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-card class="card-main">
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-head">Name</ion-col>
+          <ion-col size="6" class="col-head add-right">$55.00</ion-col>
+        </ion-row>
+        <ion-row class="row-item">
+          <ion-col size="6" class="col-desc">Invoice 1</ion-col>
+          <ion-col size="6" class="col-desc add-right">December 12, 2019</ion-col>
+        </ion-row>
+        <ion-row class="row-item add-top">
+          <ion-col size="6" class="col-item">
+            <ion-badge mode="md" class="badge1">Viewed</ion-badge>
+          </ion-col>
+          <ion-col size="6" class="col-item add-right">
+            <ion-button fill="clear" size="small" class="btn-edit">
+              <ion-icon name="create" mode="md"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </div>
+
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/new-invoice">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

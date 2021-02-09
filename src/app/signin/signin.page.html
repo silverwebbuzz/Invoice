@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary" class="head">Sign in</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <img src="../../assets/image/logo.png" class="lbl-logo"/>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked" class="input-lbl">Email</ion-label>
+      <ion-input type="text" class="input-box"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked" class="input-lbl">Password</ion-label>
+      <ion-input type="password" class="input-box">
+        <ion-icon name="eye-off" class="icon-eye"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <ion-label class="lbl-forgot">I forgot my <ion-text color="primary" routerLink="/forgotpass"> Password. </ion-text> </ion-label>
+
+    <div class="btns-bottom">
+
+    <ion-label class="lbl-signup">Don't have an account? <ion-text color="primary" routerLink="/signup"> Sign up. </ion-text> </ion-label>
+
+    <ion-button expand="full" shape="round" class="btn-signin" routerLink="/business-info">SIGN IN</ion-button>
+
+    </div>
+
+</ion-content>

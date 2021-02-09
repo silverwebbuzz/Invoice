@@ -1,0 +1,48 @@
+.lbl-logo{
+    height: 30%;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+.input-item{
+    --padding-start: 8px;
+
+    .input-lbl{
+        font-weight: bold;
+    }
+    .input-box{
+        background: #f1f1f1;
+        --padding-start: 8px;
+    
+        .icon-eye{
+            position: absolute;
+            right: 10px;
+            color: grey;
+        }
+    }
+}
+.lbl-forgot{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btns-bottom{
+    margin: 30% 0% 10% 0%;
+
+    .lbl-signup{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .btn-signin{
+        width: 75%;
+        margin: auto;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+}
